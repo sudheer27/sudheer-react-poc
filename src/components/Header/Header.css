@@ -1,0 +1,233 @@
+.Header {
+    height: 60px;
+    width: 100%;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    background-color: #1b817d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.LogoDiv,
+.Logo-search-sign-part {
+    height: 90%;
+}
+
+.NavigationItem {
+    width: 100%;
+}
+
+/*
+.Services-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+*/
+
+.Services-menu nav.NavigationItem {
+    width: 100%;
+    height: 100%;
+}
+
+.Services-menu nav.NavigationItem ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.Services-menu nav.NavigationItem li.NavigationItem a {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-family: "open sans";
+    color: #e0e0e0;
+    padding: 20px 18px;
+    white-space: nowrap;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+.NavigationItem ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+
+}
+*/
+
+.NavigationItem ul li {
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    margin: 0px 0;
+    width: 100%;
+    position: relative;
+}
+
+.NavigationItem a {
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+    color: #40A4C8;
+}
+
+.ShowMObile {
+    display: none;
+}
+
+.ShowDesktop button {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAMAAACecocUAAAAUVBMVEUAAACgnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpygnpym1xK2AAAAGnRSTlMA9N2XiXYKJxj47ta9tnBnSDfn5MSpgn5VQLKkqOUAAABXSURBVAjXPYpHFoAgFANDVymC3dz/oPJZOJtM8gLAaaozQMhMt1lU61q4Api09kBMECorQDfcSyo7fJJr3r24ZQDafAR4Ry3Lo7jNjDTjWox9cfXyY5cP4foDajedS8QAAAAASUVORK5CYII=') no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 28px;
+    margin: 0;
+    height: 28px;
+    border: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+}
+.Logo-menu-sign-part-search {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sign-search-part {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.Sign-search-part .Contact-us ul {
+    padding: 0;
+}
+
+.Sign-search-part .Contact-us .NavigationItem {
+    list-style-type: none;
+}
+
+.PcPages {
+    display: flex;
+/*    width: 100%;*/
+}
+
+.PcPages .dropdown a.btn {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-family: "open sans";
+    color: #e0e0e0;
+    padding: 20px 8px;
+    text-decoration: none;
+}
+
+/*
+.PcPages .dropdown a.btn.btn-quaternary {
+    border-right: 1px solid #fff;
+}
+*/
+
+.PcPages .dropdown {
+    margin: 0;
+    position: relative;
+    display: flex
+}
+
+.Search-menu {
+    display: flex;
+}
+
+.ShowDesktop {
+    margin: 1.2rem 0 1rem 1rem;
+}
+
+.Search-menu  input#askAnaQueryInput {
+    padding: 5px 28px 5px 5px;
+    width: 150px;
+    height: 16px;
+    margin: 0;
+}
+
+.menu-sign-part-search {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+
+/*
+li.NavigationItem a.is-link.active:before {
+    opacity: 1;
+    transform: translateY(0) scale(1) translateZ(0);
+}
+
+li.NavigationItem a.is-link:before {
+    opacity: 0;
+    transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transform: translateY(0) scale(0.95) translateZ(0);
+}
+
+li.NavigationItem a.is-link:before {
+    position: absolute;
+    content: '';
+    top: -1px;
+    left: 0%;
+    width: 100%;
+    height: 61px;
+    content: attr(title);
+    color: #292929;
+    line-height: 3.9;
+    background-color: #ffc815;
+    cursor: pointer;
+}
+*/
+
+.menu-sign-part-search a.is-link:after {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: #ffc815;
+    transform-origin: 0 0;
+    transform: scaleX(0) translateZ(0);
+    transition: 0.5s cubic-bezier(0.125, 0.75, 0.415, 1);
+}
+
+.menu-sign-part-search a.is-link:hover:after {
+    transform: scaleX(1) translateZ(0);
+}
+
+.PcPages .dropdown.dropdown--login span.pipe-symbol {
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 2px;
+}
